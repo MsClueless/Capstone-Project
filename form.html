@@ -10,24 +10,30 @@
 
         <nav>
             <ul>
-                <li>Main</li>
-                <li>Page 2</li>
-                <li>Page 3</li>
-                <li>Page 4</li>
+                <li><a href="#"></a> Main</li>
+                <li><a href="/form.html"></a>Form</li>
+                <li><a href="/links.html"></a>Links</li>
+                <li><a href="/misc.html">Miscellaneous</a></li>
             </ul>
         </nav>
 
         <form action="post">
             <fieldset>
-                <label for=""></label>
-                <input type="text">
-                <label for=""></label>
-                <input type="text">
-                 <label for=""></label>
-                 <input type="checkbox">
-                <label for=""></label>
-                <input type="textarea">
-                <button type="submit">Submit</button>
+
+            <legend>I'd love to hear from you!</legend>
+
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" required>
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+
+                 <label for="update">Let me know when there's an update!</label>
+                 <input type="checkbox" id="update">
+                <label for="comment">Leave a comment:</label>
+                <input type="textarea" id="comment">
+                <button type="submit" id="submit">Submit</button>
             </fieldset>
         </form>
 
